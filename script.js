@@ -1,4 +1,6 @@
+
 function klikk(){
+    var pont=0;
 if(document.getElementById("gomb2").checked==true){
     pont+=1;
 }
@@ -14,5 +16,5 @@ if(document.getElementById("allatok").value=="igaz"){
 if(document.getElementById("iskola").value=="szixi"){
     pont+=1;
 }
-document.getElementById("valaszok").innerHTML=pont;
+document.getElementById("valaszok").innerHTML="Eredmény: "+pont;
 }

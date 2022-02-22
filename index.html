@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>Kvíz</title>
 </head>
-<body>   
-    <div class="container">
+<body style="background-color: rgb(201, 214, 166);"> 
+
+    <div class="container" >
     <h1 class="h2 text-center">Kvíz feladatok!</h1>
-    <p class="h5">Mi magyarország fővárosa?</p>
+    <p class="h5">1. Mi magyarország fővárosa?</p>
     <div class="custom-control custom-radio">
         <input type="radio" class="custom-control-input" id="gomb1" name="groupOfDefaultRadios" value="hamis">
         <label class="custom-control-label" for="gomb1">New York</label>
@@ -23,43 +24,43 @@
         <input type="radio" class="custom-control-input" id="gomb3" name="groupOfDefaultRadios" value="hamis">
         <label class="custom-control-label" for="gomb3">Bukarest</label>
       </div>
-
-      <p class="h5">Melyik Magyarország legnagyobb tava?</p>
-      <select Name="tavak">
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <p class="h5">2. Melyik Magyarország legnagyobb tava?</p>
+      <select Name="tavak" id="tavak">
        <option id="ferto" value="hamis">Fertő-tó</option>
        <option id="balaton" value="igaz">Balaton</option>
        <option id="arloi" value="hamis">Arlói-tó</option>
        <option id="banki" value="hamis">Bánki-tó</option>
     </select>
-
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
     <p class="h5">
     
-        <label for="to"><strong>Melyik Magyarország legnagyobb tava?:</strong></label>
-        <input type="text" size="21" name="nev" id="to" required maxlength="20" >
+        <label for="iskola"><strong>3. Melyik Magyarország legjobb iskolája?</strong></label>
+        <input type="text" size="21" name="iskola" id="iskola"  >
       </p>
-
-      <p class="h5">Melyik Magyarország legnagyobb plázája?</p>
-      <select Name="plazak">
+      <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      <p class="h5">4. Melyik Magyarország legnagyobb plázája?</p>
+      <select Name="plazak" id="plazak">
        <option id="arena" value="igaz">Aréna pláza</option>
        <option id="arkad" value="hamis">Árkád</option>
        <option id="tatabanya" value="hamis">Tatabányai pláza</option>
     </select>
-
-
-    <p class="h5">Melyik a legnagyobb állat?</p>
-    <select Name="allatok">
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    
+    <p class="h5">5. Melyik a legnagyobb állat?</p>
+    <select Name="allatok" id="allatok">
      <option id="balna" value="igaz">Bálna</option>
      <option id="elefant" value="hamis">Elefánt</option>
      <option id="kutya" value="hamis">Kutya</option>
      <option id="macska" value="hamis">Macska</option>
     </select>
-    <br> 
-    <br>
-    <button type="button" class="btn btn-primary">Adatok rögzítése, és eredmény megtekintése</button>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
-    
+    <button type="button" class="btn btn-warning" id="eredmeny" onclick="klikk()">Adatok rögzítése, és eredmény megtekintése</button>
+
      <span id="valaszok"></span>
         
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

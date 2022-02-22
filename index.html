@@ -12,50 +12,54 @@
     <h1 class="h2 text-center">Kvíz feladatok!</h1>
     <p class="h5">Mi magyarország fővárosa?</p>
     <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" id="gomb1" name="groupOfDefaultRadios">
+        <input type="radio" class="custom-control-input" id="gomb1" name="groupOfDefaultRadios" value="hamis">
         <label class="custom-control-label" for="gomb1">New York</label>
       </div>
       <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" id="gomb2" name="groupOfDefaultRadios" >
+        <input type="radio" class="custom-control-input" id="gomb2" name="groupOfDefaultRadios" value="igaz">
         <label class="custom-control-label" for="gomb2">Budapest</label>
       </div>
       <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" id="gomb3" name="groupOfDefaultRadios">
+        <input type="radio" class="custom-control-input" id="gomb3" name="groupOfDefaultRadios" value="hamis">
         <label class="custom-control-label" for="gomb3">Bukarest</label>
       </div>
 
       <p class="h5">Melyik Magyarország legnagyobb tava?</p>
       <select Name="tavak">
-       <option>Fertő-tó</option>
-       <option>Balaton</option>
-       <option>Arlói-tó</option>
-       <option>Bánki-tó</option>
+       <option id="ferto" value="hamis">Fertő-tó</option>
+       <option id="balaton" value="igaz">Balaton</option>
+       <option id="arloi" value="hamis">Arlói-tó</option>
+       <option id="banki" value="hamis">Bánki-tó</option>
     </select>
 
     <p class="h5">
     
-        <label for="nev"><strong>Melyik Magyarország legnagyobb tava?:</strong></label>
-        <input type="text" size="21" name="nev" id="nev" required maxlength="20">
+        <label for="to"><strong>Melyik Magyarország legnagyobb tava?:</strong></label>
+        <input type="text" size="21" name="nev" id="to" required maxlength="20" >
       </p>
 
       <p class="h5">Melyik Magyarország legnagyobb plázája?</p>
-      <select Name="tavak">
-       <option>Aréna pláza</option>
-       <option>Árkád</option>
-       <option>Tatabányai pláza</option>
+      <select Name="plazak">
+       <option id="arena" value="igaz">Aréna pláza</option>
+       <option id="arkad" value="hamis">Árkád</option>
+       <option id="tatabanya" value="hamis">Tatabányai pláza</option>
     </select>
 
 
     <p class="h5">Melyik a legnagyobb állat?</p>
-    <select Name="tavak">
-     <option>Bálna</option>
-     <option>Elefánt</option>
-     <option>Kutya</option>
-     <option>Macska</option>
+    <select Name="allatok">
+     <option id="balna" value="igaz">Bálna</option>
+     <option id="elefant" value="hamis">Elefánt</option>
+     <option id="kutya" value="hamis">Kutya</option>
+     <option id="macska" value="hamis">Macska</option>
     </select>
-    
-    
+    <br> 
+    <br>
+    <button type="button" class="btn btn-primary">Adatok rögzítése, és eredmény megtekintése</button>
 
+    
+     <span id="valaszok"></span>
+        
     </div>
 </body>
 </html>
